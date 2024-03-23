@@ -19,7 +19,14 @@ COPY Slicer /opt/slicer
 
 # Set the necessary environment variables for Slicer
 ENV SLICER_HOME=/opt/slicer
+ENV DISPLAY=:1
 ENV PATH="${SLICER_HOME}:$PATH"
+
+# Copy slicerrc.py to the container
+COPY slicerrc.py /root/.slicerrc.py
+
+# Map local directories to directories in the container
+VOLUME ["/root", "/images"]
 
 # Create a custom script to start Slicer and maximize its window
 RUN echo '#!/bin/bash\n\

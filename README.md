@@ -1,0 +1,1 @@
+$ sudo docker run -d -p 7788:80 -v /home/blvksh33p/Documents/trials/documents:/root/documents -v /home/blvksh33p/Documents/trials/images:/images kchemorion/desk
