@@ -26,10 +26,11 @@ ENV PATH="${SLICER_HOME}:$PATH"
 COPY slicerrc.py /root/.slicerrc.py
 
 # Map local directories to directories in the container
-VOLUME ["/root", "/images"]
+VOLUME ["/root/Documents", "/images"]
 
 # Create a custom script to start Slicer and maximize its window
 RUN echo '#!/bin/bash\n\
+mkdir -p /root/Documents\n\
 /opt/slicer/Slicer &\n\
 # Wait for the Slicer window to appear\n\
 while ! xdotool search --name "3D Slicer" 2>/dev/null; do sleep 1; done\n\

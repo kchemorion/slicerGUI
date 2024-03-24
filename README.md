@@ -1,1 +1,1 @@
-$ sudo docker run -d -p 7788:80 -v /home/blvksh33p/Documents/trials/documents:/root/documents -v /home/blvksh33p/Documents/trials/images:/images kchemorion/desk
+$ sudo docker run -d -p 8080:80 -v /path/to/where/you/want/documents:/root/Documents -v /path/to/your/images:/images kchemorion/slicer
