@@ -1,5 +1,3 @@
-Below is a comprehensive README.md for your Dockerfile:
-
 ```markdown
 # Slicer Docker Container
 
