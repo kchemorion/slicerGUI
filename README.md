@@ -1,4 +1,3 @@
-```markdown
 # Slicer Docker Container
 
 This Dockerfile creates a Docker container with an Ubuntu desktop environment that includes VNC and noVNC/web access. In this environment, the 3D Slicer application is installed and configured to run.
